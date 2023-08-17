@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios y mapas</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Formularios y extras</h1>
+    <form action="./show_data.html" method="get">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nomape">Nombre y apellido</label>
+            <input type="text" maxlength="50" id="nomape" name="nombre_completo">
+
+            <label>
+                DNI
+                <input type="number" name="dni" min="10000000" max="90000000">
+            </label>
+
+            <label>
+                Nacionalidad
+                <select name="nacionalidad">
+                    <option value="Arg">Argentina</option>
+                    <option value="Col">Colombia</option>
+                    <option value="Bra">Brasil</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Color</legend>
+            <label>
+                Rojo
+                <input type="checkbox" name="color" value="Rojo">
+            </label>
+            <label>
+                Violeta
+                <input type="checkbox" name="color" value="Violeta">
+            </label>
+            <label>
+                Verde
+                <input type="checkbox" name="color" value="Verde">
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Talle</legend>
+            <label>
+                Pequeño
+                <input type="radio" name="talle" value="Pequeño">
+            </label>
+            <label>
+                Mediano
+                <input type="radio" name="talle" value="Mediano">
+            </label>
+            <label>
+                Grande
+                <input type="radio" name="talle" value="Grande">
+            </label>
+        </fieldset>
+
+        <input type="submit" value="send">
+    </form>
+
+    <h2>Nuestra ubicación</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1926912.6738012456!2d-99.143613!3d19.390734!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2zQ2l1ZGFkIGRlIE3DqXhpY28sIENETVgsIE3DqXhpY28!5e0!3m2!1ses!2sar!4v1691707402389!5m2!1ses!2sar"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+</body>
+
+</html>
